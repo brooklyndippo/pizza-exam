@@ -8,14 +8,68 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!-- Pizza Input -->
+        <section id="input">
+            <h1>Pizza Builder</h1>
+            <!-- Name Input -->
+            <label for="name">
+                Enter Your Name
+            </label>
+            <input 
+                id="name"
+                type="text"
+            >
+            <!-- Diameter Input -->
+            <label for="diameter">
+                Pizza Diameter (inches)
+            </label>
+            <input 
+                id="diameter"
+                name="diameter"
+                type="range"
+                min="6"
+                max="100"
+            >            
+            <!-- Toppings Input -->
+            <label for="toppings">
+                Choose Your Topping
+            </label>
+            <select 
+                id="toppings"
+                name="toppings"
+            >
+                <option>Cheese</option>
+                <option>Pepperoni</option>
+                <option>Sausage</option>
+                <option>Onion</option>
+                <option>Tomato</option>
+               </select>           
+        </section>
 
+        <!-- Pizza Display -->
+        <section id="display">
+            <h1>Order Details</h1>
 
-        <!-- NOTES GO HERE -->
-        <!-- NOTES GO HERE -->
-        <!-- NOTES GO HERE -->
+            <!-- Name Output -->
+            <h2>Pickup order for:</h2>
+            <p id="name-output"></p>
+            <!-- Diameter Output -->
+            <h2>Pizza Diameter</h2>
+            <p id="diameter-output"></p>
+            <!-- Toppings Output -->
+            <h2>Type of Pizza:</h2>
+            <p id="type-output"></p>
+            <!-- Toppings Output -->
+            <h2>Pickup order for:</h2>
+            <p id="cost-output"></p>           
+        </section>
 
+        <!-- Pizza Visual -->
+        <section id="visual">
+            <div id="pizza"></div>
+        </section>
 
-
+        
         <script src="scripts.js"></script>
     </body>
 </html>
