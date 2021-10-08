@@ -56,9 +56,9 @@ function handlePizza(e) {
     console.log (`area: ${area}`)
 
     // use the pizza type to determine the cost per square inch
-    let perInch = 0.33
+    let perInch = 0.08
     if (toppings == "Cheese") {
-        perInch = 0.25
+        perInch = 0.05
     } 
 
     console.log(`cost per square inch: ${perInch}`)
@@ -77,19 +77,19 @@ function handlePizza(e) {
 
 
     //display the PIZZA!
-    let pizzaImage = "images/cheese.jpeg"
+    let pizzaImage = "images/cheese.png"
     
     if (toppings == "Pepperoni") {
-        pizzaImage = "images/peperoni.jpeg"
+        pizzaImage = "images/pepperoni.png"
     }
     else if (toppings == "Sausage") {
-        pizzaImage = "images/sausage.jpeg"
+        pizzaImage = "images/sausage.png"
     }
     else if (toppings == "Onion") {
-        pizzaImage = "images/onions.jpeg"
+        pizzaImage = "images/onions.png"
     }
     else if (toppings == "Tomato") {
-        pizzaImage = "images/tomatoes.jpeg"
+        pizzaImage = "images/tomatoe.png"
     }
 
     pizza.innerHTML = `<img src="${pizzaImage}" height="${pizzaSize}px" width="${pizzaSize}px">`

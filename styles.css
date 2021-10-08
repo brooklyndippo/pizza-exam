@@ -1,72 +1,94 @@
 /*
-style the ______:
-- thing 1
-- thing 2
-- thing 3
+style the body:
+- create a css grid
+- define grid areas
 */
 body{
-    max-width: 50vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Tahoma';
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "i v"
-    "o v";
+    "i o"
+    "v o";
   }
 
   
 #input{
   grid-area: i;
+  background-color: #cd212a;
+}
+
+#input h1{
+  background-color: #cd212a;
+  color: white;
+}
+
+label{
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+}
+
+input{
+  font-size: 20px;
+  padding: 5px;
+}
+
+select{
+  font-size: 20px;
+  padding: 5px;
 }
 
 #output{
   grid-area: o;
+  background-color: #f4f5f0;
+}
+
+#output h1{
+  background-color: #f4f5f0
 }
 
 #visual{
   grid-area: v;
+  align-content: center;
+  background-color: #008c45;
+}
+
+#visual h1{
+  background-color: #008c45;
+  color: white;
 }
 
 section{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 30vw;
+  min-height: 40vh;
   border: 1px solid black; 
   padding: 20px;
   margin: 20px 10px;
 }
 
-/*
-style the ______:
-- thing 1
-- thing 2
-- thing 3
-*/
 h1{
+    font-size: 24px;
     background-color: white;
     text-align: center;
+    text-transform: uppercase;
   }
   
+h2{
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
 
-/*
-style the ______:
-- thing 1
-- thing 2
-- thing 3
-*/
-body{
-    background-color: white;
-  }
-  
-
-  /*
-style the ______:
-- thing 1
-- thing 2
-- thing 3
-*/
-body{
-    background-color: white;
-  }
-  
+p{
+  font-size: 16px;
+}
