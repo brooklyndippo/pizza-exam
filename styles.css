@@ -5,6 +5,7 @@ style the ______:
 - thing 3
 */
 body{
+    max-width: 50vw;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
