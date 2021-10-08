@@ -6,16 +6,45 @@ style the ______:
 */
 body{
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "i v"
+    "o v";
   }
+
   
+#input{
+  grid-area: i;
+}
+
+#output{
+  grid-area: o;
+}
+
+#visual{
+  grid-area: v;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30vw;
+  border: 1px solid black; 
+  padding: 20px;
+  margin: 20px 10px;
+}
+
 /*
 style the ______:
 - thing 1
 - thing 2
 - thing 3
 */
-body{
+h1{
     background-color: white;
+    text-align: center;
   }
   
 
